@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Model </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon (2).ico" type="image/x-icon">
+</head>
+<body>
+    <!-- outermost wrapper  -->
+    <div class="outerwrapper">
+
+        <!-- upper circle  -->
+        <div class="circle1"></div>
+        <!-- bottom circle  -->
+        <div class="circle2"></div>
+
+        <!-- center card section div  -->
+        <div class="wrapper">
+
+            <div class="card-wrapper">
+                <!-- image -->
+                <div>
+                    <img src="./images/userImage.jpg" alt="user" height="300px" width="300px"/>
+                </div>
+                <!-- username -->
+                <div class="user-name">
+                    <h2>VISHNU SINGH</h2>
+                </div>
+                <!-- designation -->
+                <div class="designation">
+                    <h3>Web Developer</h3>
+                </div>
+                <!-- buttons div -->
+                <div class="bottom-group">
+                    <button onclick="openModel()" class="btn-share btn-card">
+                      <i class="fa-solid fa-share"></i>
+                      <div>share my profile</div>
+                    </button>
+            
+                    <button class="btn-follow btn-card">Follow me</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- model component -->
+         <div class="model">
+
+            <div class="model-header">
+
+                <h1>Share My Profile</h1>
+                <div>
+                    <i onclick="closeModel()" class="fa-solid fa-xmark close"></i>
+                </div>
+                
+            </div>
+
+            <!-- icons section -->
+
+            <div>
+
+                <h3 class="share-via">Share this via</h3>
+                <div class="icon-container">
+                    <a href="#" class="icon" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon" id="twitter">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="icon" id="telegram">
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+         </div>
+
+         <!-- overlay section -->
+        <div class="overlay" onclick="closeModel()"></div>
+
+    </div>
+    
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
